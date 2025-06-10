@@ -86,6 +86,7 @@ export default function Main() {
   return (
     <div className="p-6 max-w-xl mx-auto">
       <h1 className="text-2xl font-bold mb-4 text-blue-300">Leave Your Name!</h1>
+      <p className="text-xl p-2 text-blue-300">Enter your name in the form below to add it to the list of other users who have done so! (p.s. If you do not want to put your real name that is okay!)</p>
       <form onSubmit={handleSubmit} className="mb-6 flex">
         <input
           type="text"
@@ -98,8 +99,8 @@ export default function Main() {
       </form>
       <ul className="space-y-2">
         {names.map((msg, index) => (
-          <li key={index} className="border p-2 rounded bg-black-300 text-blue-300 text-center text-lg">
-            {msg.name}
+          <li key={msg.id} className="border p-2 rounded bg-black-300 text-blue-300 text-lg">
+            {msg.id} <p className="w-fit mx-auto">{msg.name}</p>
           </li>
         ))}
       </ul>
