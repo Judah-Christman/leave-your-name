@@ -93,8 +93,8 @@ export default function Main() {
         <button type="submit" className="bg-blue-500 text-white px-4 py-2 rounded hover:cursor-pointer">Send</button>
       </form>
       <ul className="space-y-2">
-        {names.map((msg) => (
-          <li key={msg.id} className="border p-2 rounded bg-black-300 text-blue-300 text-center text-lg">
+        {names.map((msg, index) => (
+          <li key={index} className="border p-2 rounded bg-black-300 text-blue-300 text-center text-lg">
             {msg.name}
           </li>
         ))}
