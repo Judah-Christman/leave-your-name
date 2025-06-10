@@ -6,7 +6,7 @@ import { Filter } from 'bad-words';
 const filter = new Filter();
 
 export default function Main() {
-  const [names, setNames] = useState([]);
+  const [names, setNames] = useState<{ id: string; name: string }[]>([]);
   const [newName, setNewName] = useState("");
 
 
