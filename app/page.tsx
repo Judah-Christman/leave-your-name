@@ -1,6 +1,6 @@
 'use client'
 import { useEffect, useState } from 'react'
-import { supabase } from './supabase.js'
+import { supabase } from './supabase'
 import { Filter } from 'bad-words';
 
 const filter = new Filter();
