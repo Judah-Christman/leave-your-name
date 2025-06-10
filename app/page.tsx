@@ -51,7 +51,7 @@ export default function Main() {
   e.preventDefault();
 
   if (!newName.trim()) {
-    setErrorMessage('Please enter a name.');
+    alert('Please enter a name.');
     return;
   }
 
@@ -67,8 +67,8 @@ export default function Main() {
     .select(); // this ensures data is returned
 
   if (error) {
-    console.error('Insert error:', error);
-    setErrorMessage('Failed to save. Try again.');
+    console.log('Insert error:', error);
+    alert('Failed to save. Try again.');
   } else {
     setNewName('');
     if (data && data.length > 0) {
