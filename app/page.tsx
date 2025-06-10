@@ -1,8 +1,7 @@
 'use client'
-import { useEffect, useState } from 'react'
+import { useEffect, useState, FormEvent } from 'react'
 import { supabase } from './supabase.js'
 import { Filter } from 'bad-words';
-import { FormEvent } from "next";
 
 const filter = new Filter();
 
