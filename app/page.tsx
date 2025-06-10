@@ -9,6 +9,10 @@ export default function Main() {
   const [names, setNames] = useState<{ id: string; name: string }[]>([]);
   const [newName, setNewName] = useState("");
 
+  useEffect(() => {
+  fetchNames();
+}, []);
+
 
 
 
