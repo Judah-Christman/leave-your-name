@@ -2,6 +2,7 @@
 import { useEffect, useState } from 'react'
 import { supabase } from './supabase.js'
 import { Filter } from 'bad-words';
+import { FormEvent } from "next";
 
 const filter = new Filter();
 
@@ -47,7 +48,7 @@ export default function Main() {
   //   inputRef.current?.focus();
   // }
 
-  async function handleSubmit(e) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
   e.preventDefault();
 
   if (!newName.trim()) {
