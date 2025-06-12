@@ -85,12 +85,12 @@ export default function Main() {
 
   return (
     <div className="p-6 max-w-xl mx-auto">
-      <h1 className="text-2xl font-bold mb-4 text-blue-300">Leave Your Name!</h1>
-      <p className="text-xl p-2 text-blue-300">Enter your name in the form below to add it to the list of other users who have done so! (p.s. If you do not want to put your real name that is okay!)</p>
+      <h1 className="text-2xl font-bold mb-4 text-blue-300">Leave A Message!</h1>
+      <p className="text-xl p-2 text-blue-300">Enter your message in the form below to add it to the list of other users who have also done so! </p>
       <form onSubmit={handleSubmit} className="mb-6 flex">
         <input
           type="text"
-          placeholder="Enter name"
+          placeholder="Enter message"
           value={newName}
           onChange={(e) => setNewName(e.target.value)}
           className="flex-grow border border-gray-300 p-2 mr-2 rounded"
